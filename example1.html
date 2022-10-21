@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: orange;
+            animation-name: rotate-keyframe; /* 套用的 keyframe */
+            animation-duration: 3s;          /* 動畫持續時間 */
+            animation-iteration-count: infinite; /* 動畫播放次數 */
+            animation-timing-function: linear;   /* 影片加速速率 */
+        }
+        @keyframes rotate-keyframe {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

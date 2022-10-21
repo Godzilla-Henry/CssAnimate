@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            width: 270px;
+            height: 270px;
+            border: 1px solid black;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+        .image:hover img{
+            transform: scale(2);
+        }
+        .image img{
+            height: 270px;
+            position: absolute;
+            left: -45%;
+            transition: all 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="https://i.ytimg.com/vi/csJ-RyR8A6E/maxresdefault.jpg" alt="" srcset="">
+    </div>
+</body>
+</html>

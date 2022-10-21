@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Transform -->
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            transform-origin: left center;
+            transition: all 2s;
+        }
+
+        .bigbox {
+            transform:rotate(1000deg);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggle()">Button</button>
+
+    <br><br><br><br>
+    <div id="box"></div>
+    <script>
+        function toggle(){
+            let box = document.getElementById("box");
+            console.log(box);
+            box.classList.toggle("bigbox");
+        }
+    </script>
+</body>
+</html>
